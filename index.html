@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Starbucks Inspired Website</title>
+    <style>
+        header {
+            position: relative;
+            min-height: 1000px;
+            overflow: hidden;
+        }
+
+        .header-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; 
+        }
+        .nav-wrapper {
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            z-index: 1000;
+            background-color: #00704A !important; 
+            font: bolder;
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: #00704A;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: #00704A;
+        }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+        .brand-logo>img {
+            width: 48px;
+            height: 48px;
+            transform: translateY(10px);
+        }
+        #brand-logo-title {
+            padding-left: .5rem;
+        }
+        .location-icon {
+            color: #00704A; 
+            font-size: 24px; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- navbar -->
+    <header>
+            <video autoplay muted loop class="header-video">
+                <source src="vid/STARBUCKSVID.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        <!-- navbar -->
+        <nav class="nav-wrapper">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-logo">
+                <img class="responsive-img" src="img/starbucks-logo.png" alt="">
+                <span id="brand-logo-title">STARBUCKS</span>
+            </a>
+    
+            <div class="container">
+                <!-- Sidenav Trigger -->
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+    
+                <!-- Left-aligned buttons -->
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="rewards.html">REWARDS</a></li>
+                    <li><a href="giftcards.html">GIFT CARDS</a></li>
+                </ul>
+    
+                <!-- Right-aligned buttons -->
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="store.html" class="btn white">
+                            <span style="color: #00704A;">FIND A STORE</span>
+                            <i class="material-icons right location-icon">location_on</i>
+                        </a>
+                    </li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-trigger" href="#" data-target="dropdown1">EXPLORE HOME</a></li>
+                </ul>
+    
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="#photos">Background</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#services">Services</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                </ul>
+            </div>
+    
+            <!-- Sidenav for mobile -->
+            <ul class="sidenav grey lighten-2" id="mobile-menu">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="giftcards.html">Gift Cards</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- photo / grid -->
+<section class="container section scrollspy" id="photos">
+    <div class="row">
+        <div class="col s12 l4">
+            <img src="img/S1.JPG" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 offset-l1">
+            <h2 class="green-text text-darken-2">What is Starbucks?</h2>
+            <p>Starbucks, founded in Seattle in 1971, is a global coffeehouse chain known for its premium coffee and welcoming atmosphere. With thousands of stores in over 80 countries, it emphasizes sustainability, ethical sourcing, and community impact. </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 l4 push-l7 offset-l1">
+            <img src="img/S2.JPG" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 pull-l4 right-align">
+            <h2 class="green-text text-darken-2">What do they offer?</h2>
+            <p>Starbucks offers coffee, tea, seasonal drinks, pastries, and sandwiches, along with retail products like coffee beans and mugs. Customers can personalize orders and use the mobile app for rewards and pre-ordering, all while supporting sustainability efforts like ethical sourcing and waste reduction.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 l4">
+            <img src="img/S3.JPG" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 offset-l1">
+            <h2 class="green-text text-darken-2">Where can you find it?</h2>
+            <p>Starbucks is conveniently located in malls, office buildings, and airports, making it easy to grab your favorite coffee on the go. With their mobile app, you can order ahead, earn rewards, and skip the line, so you can enjoy a refreshing drink anytime, anywhere. Visit Starbucks today and treat yourself to a moment of comfort!</p>
+        </div>
+    </div>
+</section>
+<!-- parallax -->
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="img/S4.JPG" alt="" class="responsive-img">
+    </div>
+</div>
+
+<!-- services / tabs -->
+<div class="container section scrollspy" id="services">
+    <div class="row">
+        <div class="col s12 l4">
+            <h2 class="green-text text-darken-4">What I Do...</h2>
+            <p>I’m Ma. Sophie Eunice G. Ra, a 17-year-old student pursuing a Bachelor of Science in Computer-Programming Engineering. I’ve always been passionate about technology and web development, and through this project, I’ve had the opportunity to apply my knowledge in real-world settings.</p>
+            <p>I enjoy learning new programming languages and building projects that combine creativity and functionality. This website is a testament to my journey in programming, and I look forward to creating more innovative solutions in the future.</p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+            <ul class="tabs">
+                <li class="tab col s6">
+                    <a href="#photography"class="green-text text-darken-4">Coffee</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#editing"class="green-text text-darken-4">Pastry</a>
+                </li>
+            </ul>
+            <div class="col s12" id="photography">
+                <p class="flow-text green-text text-darken-4">COFFEE</p>
+                <p>Starbucks offers a wide range of coffee beverages, from bold espresso drinks like Lattes and Cappuccinos to freshly brewed options like Pike Place Roast and refreshing Cold Brews. Whether you prefer a hot cup to start your day or a chilled Frappuccino for a sweet treat, Starbucks has something for every coffee lover.</p>
+            </div>
+            <div class="col s12" id="editing">
+                <p class="flow-text green-text text-darken-4">PASTRY</p>
+                <p>Starbucks serves a variety of delicious pastries, including buttery Croissants, sweet Muffins, and indulgent Cakes like Lemon and Carrot Cake. Perfectly paired with a coffee, their pastries offer a satisfying bite, whether you're enjoying a morning snack or an afternoon pick-me-up. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- parallax -->
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="img/S5.JPG" alt="" class="responsive-img">
+    </div>
+</div>
+
+
+
+<!-- footer -->
+<footer class="page-footer grey darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h5>About Me</h5>
+                <p>Ma. Sophie Eunice G. Ra / Starbucks Website Makes</p>
+                <p>Bachelor of Science in Computer-Programming Engineering</p>
+            </div>
+            <div class="col s12 l4 offset-l2">
+                <h5>Connect</h5>
+                <ul>
+                    <li><a href="#" class="grey-text lighten 3"></a>Facebook</li>
+                    <li><a href="#" class="grey-text lighten 3"></a>Twitter</li>
+                    <li><a href="#" class="grey-text lighten 3"></a>Linked In</li>
+                    <li><a href="#" class="grey-text lighten 3"></a>Instagram</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; 2024 Starbucks Coffee Company. All rights reserved.</div>
+    </div>
+</footer>
+
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems, {
+            coverTrigger: false,
+        });
+    });
+</script>
+<script>
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.materialboxed').materialbox();
+    $('.parallax').parallax();
+    $('.tabs').tabs();
+    $('.datepicker').datepicker ({
+        disableWeekends: true
+    });
+    $('.tooltipped').tooltip();
+    $('.scrollspy').scrollSpy();    
+    $('.dropdown-trigger').dropdown('coverTrigger', false);    
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Starbucks Inspired Website</title>
+    <style>
+        header {
+            background: url(img/S6.JPG);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+
+        .nav-wrapper {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #00704A !important;
+            font: bolder;
+        }
+
+        .logo {
+            position: absolute;
+            top: 2%;
+            left: 1%;
+            width: 1em;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .tabs .indicator {
+            background-color: #00704A;
+        }
+
+        .tabs .tab a:focus,
+        .tabs .tab a:focus.active {
+            background: #00704A;
+        }
+
+        #menu .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #menu .card:hover {
+            transform: translateY(-10px);
+        }
+
+        #menu .card-image img {
+            object-fit: cover;
+        }
+
+        #menu h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .card-title {
+            background: rgba(0, 112, 74, 0.7);
+            color: white;
+            padding: 10px;
+            font-size: 1.3rem;
+        }
+
+
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 500px;
+            }
+        }
+        .brand-logo>img {
+            width: 48px;
+            height: 48px;
+            transform: translateY(10px);
+        }
+        #brand-logo-title {
+            padding-left: .5rem;
+        }
+        .location-icon {
+            color: #00704A; 
+            font-size: 24px; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- navbar -->
+    <header>
+    <nav class="nav-wrapper">
+        <!-- Brand Logo -->
+        <a href="#" class="brand-logo">
+            <img class="responsive-img" src="img/starbucks-logo.png" alt="">
+            <span id="brand-logo-title">STARBUCKS</span>
+        </a>
+
+        <div class="container">
+            <!-- Sidenav Trigger -->
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+            </a>
+
+            <!-- Left-aligned buttons -->
+            <ul class="left hide-on-med-and-down">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="rewards.html">REWARDS</a></li>
+                <li><a href="giftcards.html">GIFT CARDS</a></li>
+            </ul>
+
+            <!-- Right-aligned buttons -->
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="#" class="btn white">
+                        <span style="color: #00704A;">FIND A STORE</span>
+                        <i class="material-icons right location-icon">location_on</i>
+                    </a>
+                </li>
+                <li><a href="contacts.html">CONTACT</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#" data-target="dropdown1">EXPLORE MENU</a></li>
+            </ul>
+
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#hotcoffee">Hot Coffee</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Three</a></li>
+                <li><a href="#!"><i class="material-icons">view_module</i>Four</a></li>
+                <li><a href="#!"><i class="material-icons">cloud</i>Five</a></li>
+            </ul>
+        </div>
+
+        <!-- Sidenav for mobile -->
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="giftcards.html">Gift Cards</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+    
+
+    <!-- Coffee Menu Section -->
+    <section class="container section scrollspy" id="hotcoffee">
+        <h1 class="green-text text-darken-4 center-align">Our Hot Coffee Menu</h1>
+        <div class="row">
+            <!-- Hot Coffees -->
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m1.jpg" alt="Hot Coffee">
+                        <span class="card-title">Caffè Americano</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m1.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Cold Coffees -->
+    <section class="container section scrollspy" id="menu">
+        <h1 class="green-text text-darken-4 center-align">Our Cold Coffee Menu</h1>
+        <h2 class="green-text text-darken-4 center-align"> Cold Brews</h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m2.jpg" alt="Cold Coffee">
+                        <span class="card-title">Salted Pecan Crunch Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m2.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m3.jpg" alt="Cold Coffee">
+                        <span class="card-title">Elphaba's Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m3.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m4.jpg" alt="Cold Coffee">
+                        <span class="card-title">Pumpkin Cream Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m4.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m5.jpg" alt="Cold Coffee">
+                        <span class="card-title">Salted Caramel Cream Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m5.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m6.jpg" alt="Cold Coffee">
+                        <span class="card-title">Chocolate Cream Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m6.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="menu/img/m7.jpg" alt="Cold Coffee">
+                        <span class="card-title">Starbucks Cold Brew Coffee</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m7.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m8.jpg" alt="Cold Coffee">
+                        <span class="card-title">Vanilla Sweet Cream Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m8.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="menu/img/m9.jpg" alt="Cold Coffee">
+                        <span class="card-title">Nondairy Salted Caramel Cream Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="m9.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m10.jpg" alt="Cold Coffee">
+                        <span class="card-title">Nondairy Vanilla Sweet Cream Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m10.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m11.jpg" alt="Cold Coffee">
+                        <span class="card-title">Cold Brew with Nondairy Vanilla Sweet Cream Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m11.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m12.jpg" alt="Cold Coffee">
+                        <span class="card-title">Nondairy Chocolate Cream Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m12.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Nitro Cold Brews -->
+    <section class="container section scrollspy" id="menu">
+        <h2 class="green-text text-darken-4 center-align">Nitro Cold Brews</h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m13.jpg" alt="Cold Coffee">
+                        <span class="card-title">Vanilla Sweet Cream Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m13.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m14.jpg" alt="Cold Coffee">
+                        <span class="card-title">Nitro Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/menu/m14.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Iced Americano -->
+    <section class="container section scrollspy" id="menu">
+        <h2 class="green-text text-darken-4 center-align">Iced Americano</h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="menu/img/m15.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Caffè Americano</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m15.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Iced Coffees -->
+    <section class="container section scrollspy" id="menu">
+        <h2 class="green-text text-darken-4 center-align">Iced Coffees</h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m16.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Coffees</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m16.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m17.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Coffee Clover Vertica</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m17.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Iced Shaken Espresso -->
+    <section class="container section scrollspy" id="menu">
+        <h2 class="green-text text-darken-4 center-align">Iced Shaken Espresso</h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m18.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Apple Crisp Oathmilk Shaken Espresso</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m18.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m19.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Espresso</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m19.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m20.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Hazelnut Oathmilk Shaken Espresso</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m20.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m21.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Brown Sugar Oathmilk Shaken Espresso</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m21.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m22.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Shaken Espresso</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m22.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Iced Flat Whites -->
+    <section class="container section scrollspy" id="menu">
+        <h2 class="green-text text-darken-4 center-align">Iced Flat Whites</h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m23.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Honey Apple Almondmilk Flat White</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m23.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m24.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Flat White</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m24.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m25.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Honey Almondmilk Flat White</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m25.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Iced Lattes -->
+    <section class="container section scrollspy" id="menu">
+        <h2 class="green-text text-darken-4 center-align">Iced Lattes</h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m26.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Caramel Brulée Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m26.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m27.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Chestnut Praline Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m27.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m28.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Gingerbread Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m28.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m29.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Sugar Cookie Almondmilk Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m29.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m30.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Pecan Crunch Oathmilk Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m30.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m31.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Pumpkin Spice Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m31.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m32.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Caramel Apple Cream Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m32.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m33.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Starbucks Blonde Vanilla Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m33.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m34.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Caffè Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m34.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m35.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Cinnamon Dolce Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m35.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Iced Macchiatos -->
+    <section class="container section scrollspy" id="menu">
+        <h2 class="green-text text-darken-4 center-align">Iced Macchiatos</h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m36.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Apple Crisp Oathmilk Macchiato</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m36.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/m37.jpg" alt="Cold Coffee">
+                        <span class="card-title">Iced Caramel Macchiato</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="menu/m37.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Iced Mochas -->
+            <section class="container section scrollspy" id="menu">
+                <h2 class="green-text text-darken-4 center-align">Iced Mochas</h2>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/m38.jpg" alt="Cold Coffee">
+                                <span class="card-title">Iced Peppermint Mocha</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="menu/m38.html">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/m39.jpg" alt="Cold Coffee">
+                                <span class="card-title">Iced Peppermint White Chocolate Mocha</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="menu/m39.html">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/m40.jpg" alt="Cold Coffee">
+                                <span class="card-title">Iced White Chocolate Mocha</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="menu/m40.html">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/m41.jpg" alt="Cold Coffee">
+                                <span class="card-title">Iced Caffè Mocha</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Warm and rich espresso-based drinks perfect for a cozy day.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="menu/m41.html">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+            </section> 
+
+            <!-- footer -->
+ <footer class="page-footer grey darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h5>About Me</h5>
+                <p>Ma. Sophie Eunice G. Ra / Starbucks Website Makes</p>
+                <p>Bachelor of Science in Computer-Programming Engineering</p>
+            </div>
+            <div class="col s12 l4 offset-l2">
+                <h5>Connect</h5>
+                <ul>
+                    <li><a href="#" class="grey-text lighten 3"></a>Facebook</li>
+                    <li><a href="#" class="grey-text lighten 3"></a>Twitter</li>
+                    <li><a href="#" class="grey-text lighten 3"></a>Linked In</li>
+                    <li><a href="#" class="grey-text lighten 3"></a>Instagram</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; 2024 Starbucks Coffee Company. All rights reserved.</div>
+    </div>
+</footer> 
+
+            <script src="js/jquery.js"></script>
+            <script src="js/materialize.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var elems = document.querySelectorAll('.dropdown-trigger');
+                    var instances = M.Dropdown.init(elems, {
+                        coverTrigger: false,
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $('.sidenav').sidenav();
+                    $('.materialboxed').materialbox();
+                    $('.parallax').parallax();
+                    $('.tabs').tabs();
+                    $('.datepicker').datepicker({
+                        disableWeekends: true
+                    });
+                    $('.tooltipped').tooltip();
+                    $('.scrollspy').scrollSpy();
+                    $('.dropdown-trigger').dropdown('coverTrigger', false);
+                });
+            </script>
+</body>
+
+</html>

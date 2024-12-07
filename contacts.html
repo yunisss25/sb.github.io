@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background: url(img/c1.JPG);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+
+        .nav-wrapper {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #00704A !important;
+        }
+
+        .container-img {
+            padding-top: 60px;
+        }
+
+        .contact-container-img {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-info h2 {
+            color: #00704A;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+        }
+
+        .contact-form {
+            margin-top: 40px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .contact-form label {
+            font-size: 1.1rem;
+            color: #00704A;
+        }
+
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #00704A;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #004f31;
+        }
+
+        .content {
+            padding: 20px;
+            color: #00704A;
+            text-align: center;
+        }
+
+        .image-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .image-section img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .image-section p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .brand-logo>img {
+            width: 48px;
+            height: 48px;
+            transform: translateY(10px);
+        }
+
+        #brand-logo-title {
+            padding-left: .5rem;
+        }
+
+        .location-icon {
+            color: #00704A; 
+            font-size: 24px; 
+        }
+
+    </style>
+</head>
+<body>
+
+   <!-- navbar -->
+   <header>
+    <nav class="nav-wrapper">
+        <a href="#" class="brand-logo">
+            <img class="responsive-img" src="img/starbucks-logo.png" alt="">
+            <span id="brand-logo-title">STARBUCKS</span>
+        </a>
+
+        <div class="container">
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+            </a>
+
+            <ul class="left hide-on-med-and-down">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="rewards.html">REWARDS CARDS</a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="#" class="btn white">
+                        <span style="color: #00704A;">FIND A STORE</span>
+                        <i class="material-icons right location-icon">location_on</i>
+                    </a>
+                </li>
+                <li><a href="contacts.html">CONTACT</a></li>
+                <li><a class="dropdown-trigger" href="#" data-target="dropdown1">EXPLORE HOME</a></li>
+            </ul>
+
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#!">Two</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Three</a></li>
+                <li><a href="#!"><i class="material-icons">view_module</i>Four</a></li>
+                <li><a href="#!"><i class="material-icons">cloud</i>Five</a></li>
+            </ul>
+        </div>
+
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="giftcards.html">Gift Cards</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Content Section -->
+<div class="content">
+    <h2>Get In Touch</h2>
+    <p>Here we are enjoying our Starbucks experience. A special moment shared with my cousin Ma. Sophie Eunice G. Ra.</p>
+</div>
+ <!-- parallax -->
+ <div class="parallax-container">
+    <div class="parallax">
+        <img src="img/cousins.JPG" alt="" class="responsive-img">
+    </div>
+</div>
+
+    <!-- contact form -->
+<section class="container section scrollspy" id="contact">
+    <div class="row">
+        <div class="col s12 l5">
+            <h2 class="indigi-text text-darken-4">Get in Touch</h2>
+            <p>Ma. Sophie Eunice G. Ra </p>
+            <p>This project has been a great learning experience as I say goodbye to Programming Logic and Design. It allowed me to apply what I've learned in web development and design, just like how Starbucks brings people together with a cup of coffee.</p>
+            <p>LI’m thankful for the chance to work on this project, which has helped me grow as a Computer-Programming Engineering student. It's been rewarding to see my skills in action, turning ideas into an interactive website. </p>
+            <p>Thank you for exploring our website! Your support means a lot, and I look forward to improving and continuing to learn in this field.</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+            <div class="input-field">
+                <i class="material-icons prefix">email</i>
+                <input type="email" id="email">
+                <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">message</i>
+                <textarea name="textarea" id="message" class="materialize-textarea"></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">date_range</i>
+                <input type="text" id="date" class="datepicker">
+                <label for="date">Choose a date you need a coffee...</label>
+            </div>
+            <div class="input-field">
+                <p>Services required...</p>
+                <p>
+                    <label>
+                        <input type="checkbox">
+                        <span>Coffee</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox">
+                        <span>Pastry</span>
+                    </label>
+                </p>
+            </div>
+            <div class="input-field center">
+                <button class="btn">Submit</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- footer -->
+<footer class="page-footer grey darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h5>About Me</h5>
+                <p>Ma. Sophie Eunice G. Ra / Starbucks Website Makes</p>
+                <p>Bachelor of Science in Computer-Programming Engineering</p>
+            </div>
+            <div class="col s12 l4 offset-l2">
+                <h5>Connect</h5>
+                <ul>
+                    <li><a href="#" class="grey-text lighten 3"></a>Facebook</li>
+                    <li><a href="#" class="grey-text lighten 3"></a>Twitter</li>
+                    <li><a href="#" class="grey-text lighten 3"></a>Linked In</li>
+                    <li><a href="#" class="grey-text lighten 3"></a>Instagram</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; 2024 Starbucks Coffee Company. All rights reserved.</div>
+    </div>
+</footer>
+
+
+
+
+    <!-- JS Libraries -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".dropdown-trigger").dropdown();
+            $(".sidenav").sidenav();
+            $('.parallax').parallax();
+        });
+    </script>
+
+</body>
+</html>
